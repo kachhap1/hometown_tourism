@@ -1,0 +1,204 @@
+
+<html>
+<head>
+    <title> Reservation Details Form</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        h2{
+            text-align: center; color: aliceblue; font-size: 40px; background-color: rgba(0, 0, 0, 0.763);
+        }
+        table{
+            margin-left: auto; margin-right: auto;
+        }
+        table, th, td{
+            border: 1px solid rgb(87, 142, 190); border-collapse: collapse; ;
+        }
+        th{
+            text-align: center; background-color: rgba(162, 205, 249, 0.847);
+        }
+        td{
+            background-color: rgba(162, 205, 249, 0.847); height: 50px; padding-left: 15px;
+        }
+        /* .l{
+            text-align: center;
+        } */
+        .foot{
+            text-align: right; padding-right: 30px;
+        }
+        p{
+        color: rgb(227, 227, 227); font-size: 20px; background-color: rgba(59, 58, 58, 0.758);
+    }
+  
+  
+
+    </style>
+</head>
+<body style="background-image: url('./pic/dhurva.png'); background-size: cover; background-repeat: no-repeat;">
+
+    
+
+
+    <form>
+        <br>
+        <p><u>Welcome to Hotal Booking Site</u>  which offer you all types of facilities. We offer clean<b> rooms, toilets, bathroom.</b>We offer Clean & fresh <i>meals</i> & also offer <i>bear, shampion, coldrinks, bisky etc.</i>So lpease give us a chance to serve you.
+        </p>
+    <table width="80%">
+
+        <tr>
+            <td colspan="4"><h2>Hotel Rservation Form</h2></td>
+            
+        </tr>
+        
+        <tr>
+            <td class="l"><label for="fname"><b>First name&nbsp;&nbsp;</b></label>
+            </td>
+            <td><input type="text" id="fname" name="fname"></td> 
+            <td class="l"><label for="fname"><b>Last name&nbsp;&nbsp;</b></label></td>
+            <td><input type="text" id="fname" name="fname"></td>
+        </tr>
+
+       
+
+        <!-- <tr>
+            <td class="l"><label for="Gender"><b>Gender &nbsp;&nbsp;</b></label></td>
+            <td> <input type="radio" value="male">Male 
+                <input type="radio" value="female">Female
+            <input type="radio" value="other">Other </td>
+        </tr> -->
+
+        <!-- <tr>
+            <td class="l"><label for=" interest"><b>Sbject of Interest&nbsp;&nbsp;</b></label></td>
+            <td> <input type="text" placeholder="Enter Interest"></td>
+        </tr> -->
+
+        <tr>
+            <td class="l"><label><b>Room&nbsp;&nbsp;</b></label></td>
+            <td><input type="checkbox" id="room1" name="room1" value="Standard Room">
+                <label for="Standard Room"> &nbsp;Standard Room</label> <br>
+   
+                <input type="checkbox" id="room2" name="room2" value="Suite">
+               <label for="Suite"> &nbsp;Suite</label> <br>
+   
+                <input type="checkbox" id="room3" name="room3" value="Superior Room">
+                <label for="Superior Room"> &nbsp;Superior Room</label><br>
+   
+               
+                
+                <input type="checkbox" id="room5" name="room5" value="Family Room">
+               <label for="Family Room">&nbsp; Family Room</label><br></td>
+
+                <td> <input type="checkbox" id="room4" name="room4" value="Executive Room">
+                <label for="Executive Room"> &nbsp;Executive Room</label><br>
+               <input type="checkbox" id="room6" name="room6" value="Adjacent Room">
+                <label for="Adjacent Room">&nbsp; Connecting/Adjacent Rooms&nbsp; </label><br>
+   
+                <input type="checkbox" id="room7" name="room7" value="Accessible Room">
+               <label for="Accessible Room">&nbsp;Accessible Room</label><br>
+   
+                <input type="checkbox" id="room8" name="room8" value="Honeymoon Suite">
+                <label for="Honeymoon Suite">&nbsp;Honeymoon Suite</label><br></td>
+                <td>
+   
+                <input type="checkbox" id="room9" name="room9" value="Pet-Friendly Room">
+               <label for="Pet-Friendly Room">&nbsp; Pet-Friendly Room</label><br>
+   
+                
+   
+                <input type="checkbox" id="room10" name="room10" value="All-Inclusive Room">
+                <label for="All-Inclusive Room"> &nbsp;All-Inclusive Room</label><br>
+   
+                </td>
+        </tr>
+
+        <tr>
+            <td class="cid"><label for="indate"><b> &nbsp;&nbsp;Check-in Date</b></label></td>
+            <td><input type="date" id="indate" name="indate"></td>
+            
+            <td class="cod"><label for="outdate"><b> &nbsp;&nbsp;Check-out Date</b></label></td>
+            <td><input type="date" id="outdate" name="outdate"></td>
+        </tr>
+
+        <tr>
+            <td class="cit"><label for="intime"><b> &nbsp;&nbsp;Check-in Time</b></label></td>
+            <td><input type="time" id="intime" name="intime">
+                <select><option value="am">am</option>
+                <option value="pm">pm</option></select></td>
+            
+            
+            <td class="cot"><label for="outtime"><b> &nbsp;&nbsp;Check-out Time</b></label></td>
+            <td><input type="time" id="outtime" name="outtime"></td>
+        </tr>
+
+        
+
+        <tr>
+            <td class="l"><label for="Education Qualification"><b>Payment&nbsp;&nbsp;</b></label></td>
+            <td><input type="radio" Name="Payment" Value="by Cash"> By CASH
+                </td>
+                <td><input type="radio" Name="By Credit Card" value="credit card"> By Credit Card</td>
+                <td></td>
+
+        </tr>
+
+        <tr>
+            <td class="l"><label for="äddress"><b>Address&nbsp;&nbsp;</b></label></td>
+            <td><input type="text" placeholder="Enter address" ></td>
+            <td class="l"><label for="pincode"><b>Pin Code&nbsp;&nbsp;</b></label></td>
+            <td><input type="number"  id="pincode" name="zip" ></td>
+        </tr>
+
+        <tr>
+           
+        </tr>
+
+        <tr>
+            <td class="l"><label><b>Occupants&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                
+            </td>
+            <td class="l"><label><b>Adults &nbsp;&nbsp;</b></label><select id="no_occupnts" name="no_occupnts">
+                <option value="o">1</option>
+                <option value="t">2</option>
+                <option value="th">3</option>
+                <option value="f">4</option>
+                <option value="fi">5</option>
+                <option value="s">6</option></select></td>
+            
+                <td class="l"><label><b>Children &nbsp;&nbsp;</b></label><select id="no_occupnts" name="no_occupnts">
+                    <option value="z">0</option>
+                    <option value="o">1</option>
+                    <option value="t">2</option>
+                    <option value="th">3</option>
+                    <option value="f">4</option>
+                    <option value="fi">5</option>
+                    <option value="s">6</option></select></td>
+                    <td></td>
+                
+
+
+            
+                <tr>
+                    <td class="l"><label for="contact no"><b>Contact No.&nbsp;&nbsp;</b></label></td>
+                    <td><input type="tel" id="tel"  placeholder="contact no." size="20"> <br>
+                     </td>
+                     <td class="l"><label for="email"><b>Email Address&nbsp;&nbsp;</b></label></td>
+            <td><input type="text" placeholder="Enter Email" ></td>
+                </tr>
+            
+        <tr>
+           
+        </tr>
+
+        <tr>
+            
+            <td colspan="2"><b>Leave Message&nbsp;&nbsp;</b><textarea name="suggestions" placeholder="Enter Message" rows="3" cols="50"> </textarea><br></td>
+            <td  class="foot"colspan="2">&nbsp;&nbsp;<input type="reset" value="Reset">
+            <input type="submit" value="Submit"></td>
+        </tr>
+
+        
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+*{
+    margin: 0; padding: 0; 
+    box-sizing: border-box;
+}
+header{
+    width: 100vw; height: 100vh;
+    background-image: url('./pic/dhurva.png');
+    background-position: bottom;  background-size: cover;
+    display: flex; align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 150px; color: whitesmoke; text-align: center; 
+}
+
+h2{
+    font-size: 600%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.548); width: 400px; height: 60px;  margin-left: auto; margin-right: 20px;margin-top:10px; 
+}
+nav a{
+    font-size: 20PX; text-align: center; color: antiquewhite;  padding-left: 12px; padding-right: 12px; text-decoration: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.line{
+    width: 150px; height: 4px; background-color: #fc036b;
+    margin:10px auto; border-radius: 5px;
+}
+
+.header-content h1{
+    font-size: 40%; margin-top: 50px; margin-bottom: 30px;
+}
+
+.ctn{
+    padding: 8px 15px; background-color: #fc036b;
+} 
