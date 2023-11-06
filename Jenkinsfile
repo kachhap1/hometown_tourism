@@ -4,24 +4,29 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Check out the code from your GitHub repository
-                checkout([$class: 'GitSCM', 
-                    branches: [[name: 'main']], 
-                    doGenerateSubmoduleConfigurations: false, 
-                    extensions: [], 
-                    submoduleCfg: [], 
-                    userRemoteConfigs: [[url: 'https://github.com/kachhap1/hometoen_tourism.git']]
-                ])
+                // Checkout your Git repository
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/kachhap1/hometown_tourism.git']]])
             }
         }
 
-        stage('Deploy to Apache') {
+        stage('Copy Files') {
             steps {
-                // Copy the code to the Apache document root directory
-                bat script: '''
-                    xcopy /s /e /y "C:\\Users\\vicky\\OneDrive\\Desktop\\hometown_tourism" "C:\\Apache24"
-                '''
+                // Use the bat step to run xcopy
+                bat(script: 'xcopy /s /e /y "C:\\Users\\vicky\\OneDrive\\Desktop\\hometown_tourism" "C:\\Apache24"')
             }
+        }
+
+        // Add more stages as needed for your pipeline
+    }
+
+    post {
+        success {
+            // Define steps to execute on success
+            echo 'The build was successful!'
+        }
+        failure {
+            // Define steps to execute on failure
+            echo 'The build failed!'
         }
     }
 }
